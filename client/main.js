@@ -11,6 +11,6 @@ const client = new StudentService(
     grpc.credentials.createInsecure()
   );
 
-client.FindStudentByEmail({email: "rizkyian78@gmail.com"}, (error, response) => {
-    console.log(response.name, "<<< ini response")
+client.FindStudentByEmail({email: "rizkaian78@gmail.com"}, (error, response) => {
+    console.log(response, "<<< ini response")
  });

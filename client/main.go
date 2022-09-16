@@ -14,7 +14,7 @@ func getDataStudentByEmail(client pb.DataStudentClient, email string) {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 	s := pb.Student{
-		Email: "rizkyian78",
+		Email: "rizkyian78@gmail.com",
 	}
 	student, err := client.FindStudentByEmail(ctx, &s)
 	if err != nil {
